@@ -7,17 +7,32 @@ var temporizador;
 
 function documentLoaded() {
   "use strict";
-
+  console.log("Document is successffully loaded");
   // listen for mouse clicks on the button
-  document.getElementById("btnStart").addEventListener("click", botaoClicked, false);
-
-  console.log("Documento carregado");
+  document.getElementById("txtTempo").addEventListener("keydown", startTimer, false);
 }
+
+function startTimer(){
+  console.log("inside start timer");
+  txtTempo.addEventListener("keydown", function keydown(evt){
+    // 13 is the code for ENTER
+    if (evt.keyCode === 13) {
+      botaoClicked();
+      // its important to remove the keydown listener, otherwise in a subsequent edit
+      // we will end up with several keydown listeners running
+      txtTempo.removeEventListener("keydown", keydown);
+    }
+});
+}
+
+
 
 // when we click on the button, we save the current time, and the time limit. We then
 // create a timer to execute the "updateTime" function once a second.
 function botaoClicked() {
   "use strict";
+
+  console.log("key pressed");
 
   startTime = new Date();
 
@@ -38,6 +53,10 @@ function updateTime() {
   // convert seconds to minutes and seconds (below 60)
   var minutos = Math.floor(elapsed / 60);
   var segundos = Math.floor(elapsed % 60);
+
+  console.log("minutes:" + minutos);
+  console.log("segundos:" + segundos);
+  console.log("limite:" + limite);
 
   // pad with zeroes on the left to look better
   if (minutos < 10) {
