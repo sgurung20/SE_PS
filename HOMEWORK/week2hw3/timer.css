@@ -4,15 +4,19 @@ body{
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 .grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+
+  border-radius: 50%;
+  width: 30em; /*https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units*/
+  height: 30em;
+  background-color: green;
+  opacity: 1.0;
+}
+
+.grid-item:hover{
+	opacity: 0;
 }
