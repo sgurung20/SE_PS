@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(40, 79, 79);
+}
+h1{
+  text-align: center;
+  color:white;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  color:gold;
+  margin-top: 10%;
+}
+
+.score{
+  margin-left: 45%;
+  font-size: 30px;
+  color:yellow;
+}
+
+.button1{
+position: absolute;
+  height: 5%;
+  width: 10%;
+  top: 25%;
+  left:35%;
+  font-size: 2.6vmin;
+  cursor: pointer;
+  background-color: pink;
+  color: white;
+}
+.button2{
+position: absolute;
+  height: 5%;
+  width: 10%;
+  top: 25%;
+  left:45%;
+  font-size: 2.6vmin;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+.button3{
+position: absolute;
+  height: 5%;
+  width: 10%;
+  top: 25%;
+  left:55%;
+  font-size: 2.6vmin;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+.button4{
+position: absolute;
+  height: 5%;
+  width: 10%;
+  top: 50%;
+  left:45%;
+  font-size: 2.6vmin;
+  cursor: pointer;
+  background-color: orange;
+  color: white;
+}
+.button5{
+position: absolute;
+  height: 5%;
+  width: 10%;
+  top: 75%;
+  left:45%;
+  font-size: 2.6vmin;
+  cursor: pointer;
+  background-color: darkgreen;
+  color: white;
+}
+.question{
+color:white;
+margin-left:30%;
+text-align: left;
+font-size:20px;
+}
+.category{
+  margin-left: 45%;
+  top:75%;
+  font-size: 20px;
+  color:rgb(216, 224, 117);
+  font-weight:bold;
+}
+.categoryValue{
+  margin-left: 45%;
+  top:75%;
+  font-size: 20px;
+  color:lightgreen;
+}
+.point{
+  margin-left: 45%;
+  top:80%;
+  font-size: 20px;
+  color:rgb(216, 224, 117);
+  font-weight:bold;
+}
+.answer{
+color:white;
+margin-left:45%;
+top:90%;
+text-align: left;
+font-size:20px;
+}
