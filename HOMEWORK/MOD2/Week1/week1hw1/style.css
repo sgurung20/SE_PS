@@ -1,0 +1,79 @@
+:root {
+  --dark-cerulean: #124e78;
+  --maastricht-blue: #0b132b;
+  --yankees-blue: #1C2541;
+  --sea-serpent: #5bc0be;
+  --aquamarine: #6fffe9;
+  --react: #00d8ff;
+}
+
+html {
+  background: var(--yankees-blue);
+}
+
+.titleheader{
+  text-align: center;
+  color: white;
+}
+aside {
+  width: 10%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  float: left;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  background-color: black;
+  color:white;
+  height:263px;
+  border-style:solid;
+}
+
+section {
+  float: left;
+  width: 20%;
+  margin:0px 4px 4px 8px;
+  color:white;
+  border-style:solid;
+}
+code {
+  background: black;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding-left: 10px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 75px;
+  text-align: left;
+}
+ #SAheader{
+  text-align: left;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+ }
+.sentimentAnalysis{
+  background: black;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 2px 5px;
+  text-align: center;
+  height:178px;
+ }
+article{
+  float: left;
+  width: 62.8%;
+  margin:0px 4px 4px 8px;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  color:white;
+  border-style:solid;
+}
+.blankcomponent{
+  box-sizing:border-box;
+  background-color: grey;
+  height:90.5px;
+  width:100;
+  border:2;
+  padding: 50;
+}
